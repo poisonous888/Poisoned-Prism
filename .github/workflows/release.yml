@@ -3,7 +3,7 @@ on: [ pull_request, push ]
 
 env:
   NAME: poisoned-prism
-  TYPE: combined
+  TYPE: FULL
   VERSION: 0.1
 
 jobs:
@@ -15,11 +15,11 @@ jobs:
       
       - name: create zip
         run: |
-          zip -r ${{ env.NAME }}.zip . -x ".git/*" ".github/*" .gitignore README.md
+          zip -r ${{ env.NAME }}-${{ env.TYPE }}-${{ env.VERSION }}.zip . -x ".git/*" ".github/*" .gitignore README.md
       
       - name: capture zip
         uses: actions/upload-artifact@v7.0.1
         with:
           path: |
-            ${{ env.NAME }}.zip
+            ${{ env.NAME }}-${{ env.TYPE }}-${{ env.VERSION }}.zip
           archive: false
