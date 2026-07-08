@@ -17,11 +17,12 @@ jobs:
       - name: Zip the folder correctly
         run: |
           cd folder
-          zip -r ../poisoned-prism.zip *
+          zip -r ../MY-CUSTOM-NAME.zip .
+          cd ..
 
       - name: Upload Zip to Release
         uses: softprops/action-gh-release@v2
         with:
-          files: poisoned-prism.zip
+          files: MY-CUSTOM-NAME.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
