@@ -13,8 +13,7 @@ jobs:
       
       - name: create zip
         run: |
-          zip -r ../MY-CUSTOM-NAME.zip .
-          cd ..
+          zip -r MY-CUSTOM-NAME.zip .
       
       - name: capture zip
         uses: actions/upload-artifact@v7.0.1
