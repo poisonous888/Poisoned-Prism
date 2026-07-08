@@ -1,0 +1,27 @@
+{
+    "model":{
+        "type":"condition","property":"component","predicate":"custom_data","value":{"id":"ICE_SPRAY_WAND"},
+        "on_true":{"type":"model","model":"psnprsm:random/ice_spray"},
+        "on_false":{
+        "type":"condition","property":"component","predicate":"custom_data","value":{"id":"STARRED_ICE_SPRAY_WAND"},
+        "on_true":{"type":"model","model":"psnprsm:random/ice_spray"},
+        "on_false":{
+        "type":"condition","property":"component","predicate":"custom_data","value":{"id":"WAND_OF_HEALING"},
+        "on_true":{"type":"model","model":"psnprsm:random/zombie_wand"},
+        "on_false":{
+        "type":"condition","property":"component","predicate":"custom_data","value":{"id":"WAND_OF_MENDING"},
+        "on_true":{"type":"model","model":"psnprsm:random/zombie_wand"},
+        "on_false":{
+        "type":"condition","property":"component","predicate":"custom_data","value":{"id":"WAND_OF_RESTORATION"},
+        "on_true":{"type":"model","model":"psnprsm:random/zombie_wand"},
+        "on_false":{
+        "type":"condition","property":"component","predicate":"custom_data","value":{"id":"WAND_OF_ATONEMENT"},
+        "on_true":{"type":"model","model":"psnprsm:random/zombie_wand"},
+        "on_false":{"type":"model","model":"item/stick"}
+        }
+        }
+        }
+        }
+        }      
+    }
+}

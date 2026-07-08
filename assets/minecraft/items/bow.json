@@ -1,0 +1,62 @@
+{
+    "model":{
+        "type":"condition","property":"component","predicate":"custom_data","value":{"id":"TERMINATOR"},
+        "on_true":{
+            "type":"condition","property":"component","predicate":"custom_data","value":"{'enchantments':{'ultimate_reiterate':5}}",
+            "on_true":{"type":"model","model":"psnprsm:terminator/duplex"},
+            "on_false":{
+            "type":"condition","property":"component","predicate":"custom_data","value":"{'enchantments':{'ultimate_rend':5}}",
+            "on_true":{"type":"model","model":"psnprsm:terminator/rend"},
+            "on_false":{
+            "type":"condition","property":"component","predicate":"custom_data","value":"{'enchantments':{'ultimate_soul_eater':5}}",
+            "on_true":{"type":"model","model":"psnprsm:terminator/soul_eater"},
+            "on_false":{
+            "type":"condition","property":"component","predicate":"custom_data","value":"{'enchantments':{'ultimate_fatal_tempo':5}}",
+            "on_true":{"type":"model","model":"psnprsm:terminator/fatal_tempo"},
+            "on_false":{
+            "type":"condition","property":"component","predicate":"custom_data","value":"{'enchantments':{'ultimate_fatal_tempo':4}}",
+            "on_true":{"type":"model","model":"psnprsm:terminator/fatal_tempo"},
+            "on_false":{
+            "type":"condition","property":"component","predicate":"custom_data","value":"{'enchantments':{'ultimate_fatal_tempo':3}}",
+            "on_true":{"type":"model","model":"psnprsm:terminator/fatal_tempo"},
+            "on_false":{
+            "type":"condition","property":"component","predicate":"custom_data","value":"{'enchantments':{'ultimate_fatal_tempo':2}}",
+            "on_true":{"type":"model","model":"psnprsm:terminator/fatal_tempo"},
+            "on_false":{
+            "type":"condition","property":"component","predicate":"custom_data","value":"{'enchantments':{'ultimate_fatal_tempo':1}}",
+            "on_true":{"type":"model","model":"psnprsm:terminator/fatal_tempo"},
+            "on_false":{"type":"model","model":"item/bow"}
+            }
+            }
+            }
+            }
+            }
+            }
+            }
+        },
+        "on_false":{
+            "type":"minecraft:condition",
+            "property":"minecraft:using_item",
+            "on_false":{
+                "type":"minecraft:model",
+                "model":"minecraft:item/bow"
+            },
+            "on_true":{
+                "type": "minecraft:range_dispatch",
+                "property": "minecraft:use_duration",
+                "scale": 0.05,
+                "fallback": {"type":"minecraft:model","model": "minecraft:item/bow_pulling_0"},
+                "entries":[
+                    {
+                        "threshold": 0.65,
+                        "model":{"type": "minecraft:model","model": "minecraft:item/bow_pulling_1"}
+                    },
+                    {
+                        "threshold": 0.9,
+                        "model": {"type": "minecraft:model","model": "minecraft:item/bow_pulling_2"}
+                    }
+                ]
+            }
+        }
+    }       
+}

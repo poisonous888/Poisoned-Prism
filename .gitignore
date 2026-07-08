@@ -4,3 +4,9 @@
 /.idea
 # Editor-based HTTP Client requests
 /httpRequests/
+
+.idea/
+.gradle/
+
+build/
+run/
