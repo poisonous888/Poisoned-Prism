@@ -1,0 +1,18 @@
+{
+    "model": {
+        "type": "range_dispatch",
+        "property": "cooldown",
+        "entries": [
+            {
+                "threshold": 0.001,
+                "model": {
+                    "type": "model",
+                    "model": "psnprsm:combat/slayer/enderman/katana/katana_ability_inv"
+                }
+            }
+        ],
+        "fallback": {
+            "type": "model", "model": "psnprsm:combat/slayer/enderman/katana/katana_inv"
+        }
+    }
+}

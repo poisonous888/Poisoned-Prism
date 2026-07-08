@@ -1,0 +1,7 @@
+{
+    "model":{
+        "type":"condition","property":"component","predicate":"custom_data","value":{"id":"FUMING_POTATO_BOOK"},
+        "on_true":{"type":"model","model":"psnprsm:books/fuming"},
+        "on_false":{"type":"model","model":"item/book"}
+    }       
+}

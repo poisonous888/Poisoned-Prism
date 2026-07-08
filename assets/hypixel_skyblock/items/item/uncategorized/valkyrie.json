@@ -1,0 +1,22 @@
+{
+    "model":{
+        "type":"select","property":"display_context",
+        "cases":[
+            {
+                "model":{
+                    "type":"model","model":"psnprsm:combat/dungeon/weapons/valkyrie_inv"
+                },
+                "when":["gui","ground","fixed","on_shelf"]
+            }
+        ],
+        "fallback":{
+            "type":"condition","property":"selected",
+            "on_true":{
+                "type":"condition","property":"keybind_down","keybind":"key.use",
+                "on_true":{"type":"model","model":"psnprsm:combat/dungeon/weapons/valkyrie_blocked"},
+                "on_false":{"type":"model","model":"psnprsm:combat/dungeon/weapons/valkyrie"}
+            },
+            "on_false":{"type":"model","model":"psnprsm:combat/dungeon/weapons/valkyrie"}
+        }
+    }
+}

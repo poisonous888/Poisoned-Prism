@@ -1,0 +1,11 @@
+{
+    "model":{
+        "type":"condition","property":"selected",
+        "on_true":{
+            "type":"condition","property":"keybind_down","keybind":"key.use",
+            "on_true":{"type":"model","model":"psnprsm:combat/dungeon/weapons/shadow_fury_blocked"},
+            "on_false":{"type":"model","model":"psnprsm:combat/dungeon/weapons/shadow_fury"}
+        },
+        "on_false":{"type":"model","model":"psnprsm:combat/dungeon/weapons/shadow_fury"}
+    }
+}

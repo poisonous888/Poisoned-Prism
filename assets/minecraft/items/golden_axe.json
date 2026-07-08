@@ -1,0 +1,35 @@
+{
+    "model":{
+        "type":"condition","property":"component","predicate":"custom_data","value":{"id":"VENATOR_GENESIS"},
+        "on_true":{"type":"model","model":"psnprsm:random/huntaxe"},
+        "on_false":{
+        "type":"condition","property":"component","predicate":"custom_data","value":{"id":"SILVA_DOMINUS"},
+        "on_true":{"type":"model","model":"psnprsm:random/huntaxe"},
+        "on_false":{
+        "type":"condition","property":"component","predicate":"custom_data","value":{"id":"CURSUS_FERAE"},
+        "on_true":{"type":"model","model":"psnprsm:random/huntaxe"},
+        "on_false":{
+        "type":"condition","property":"component","predicate":"custom_data","value":{"id":"APEX_PRAEDATOR"},
+        "on_true":{"type":"model","model":"psnprsm:random/huntaxe"},
+        "on_false":{
+        "type":"condition","property":"component","predicate":"custom_data","value":{"id":"NEX_TITANUM"},
+        "on_true":{"type":"model","model":"psnprsm:random/huntaxe"},
+        "on_false":{
+        "type":"condition","property":"component","predicate":"custom_data","value":{"id":"MELON_DICER_2"},
+        "on_true":{"type":"model","model":"psnprsm:farming/melon"},
+        "on_false":{
+        "type":"condition","property":"component","predicate":"custom_data","value":{"id":"PUMPKIN_DICER_2"},
+        "on_true":{"type":"model","model":"psnprsm:farming/pumpkin"},
+        "on_false":{
+        "type":"condition","property":"component","predicate":"custom_data","value":{"id":"COCO_CHOPPER_2"},
+        "on_true":{"type":"model","model":"psnprsm:farming/cocoa"},
+        "on_false":{"type":"model","model":"item/golden_axe"}
+        }
+        }
+        }
+        }
+        }
+        }
+        }      
+    }
+}
