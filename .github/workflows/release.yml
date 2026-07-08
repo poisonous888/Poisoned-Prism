@@ -16,10 +16,6 @@ jobs:
         run: |
           zip -r ${{ env.NAME }}-FULL-${{ env.VERSION }}.zip . -x ".git/*" ".github/*" .gitignore README.md
 
-      - name: create equipment zip
-        run: |
-          zip -r ${{ env.NAME }}-EQUIPMENT-${{ env.VERSION }}.zip . -x ".git/*" ".github/*" .gitignore README.md
-      
       - name: capture full zip
         uses: actions/upload-artifact@v7.0.1
         with:
@@ -27,9 +23,38 @@ jobs:
             ${{ env.NAME }}-FULL-${{ env.VERSION }}.zip
           archive: false
 
-      - name: capture equipment zip
-        uses: actions/upload-artifact@v7.0.1
-        with:
-          path: |
-            ${{ env.NAME }}-EQUIPMENT-${{ env.VERSION }}.zip
-          archive: false
+#      - name: create equipment zip
+#        run: |
+#          zip -r ${{ env.NAME }}-EQUIPMENT-${{ env.VERSION }}.zip . -x ".git/*" ".github/*" .gitignore README.md
+#
+#      - name: capture equipment zip
+#        uses: actions/upload-artifact@v7.0.1
+#        with:
+#          path: |
+#            ${{ env.NAME }}-EQUIPMENT-${{ env.VERSION }}.zip
+#          archive: false
+#
+#      - name: create sfx zip
+#        run: |
+#          zip -r ${{ env.NAME }}-SFX-${{ env.VERSION }}.zip . -x ".git/*" ".github/*" .gitignore README.md
+#
+#      - name: capture sfx zip
+#        uses: actions/upload-artifact@v7.0.1
+#        with:
+#          path: |
+#            ${{ env.NAME }}-SFX-${{ env.VERSION }}.zip
+#          archive: false
+#
+#      - name: create cit zip
+#        run: |
+#          zip -r ${{ env.NAME }}-CIT-${{ env.VERSION }}.zip . -x ".git/*" ".github/*" .gitignore README.md
+#
+#      - name: capture cit zip
+#        uses: actions/upload-artifact@v7.0.1
+#        with:
+#          path: |
+#            ${{ env.NAME }}-CIT-${{ env.VERSION }}.zip
+#          archive: false
+#
+#
+#
