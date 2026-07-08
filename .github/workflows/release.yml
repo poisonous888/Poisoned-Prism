@@ -15,11 +15,11 @@ jobs:
       
       - name: create zip
         run: |
-          zip -r $PACK_NAME-$PACK_TYPE-$PACK_VERSION.zip . -x ".git/*" ".github/*" .gitignore README.md
+          zip -r "$PACK_NAME-$PACK_TYPE-$PACK_VERSION.zip" . -x ".git/*" ".github/*" .gitignore README.md
       
       - name: capture zip
         uses: actions/upload-artifact@v7.0.1
         with:
           path: |
-            poisoned-prism.zip
+            "$PACK_NAME-$PACK_TYPE-$PACK_VERSION.zip"
           archive: false
