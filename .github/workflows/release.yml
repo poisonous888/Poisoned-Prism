@@ -13,11 +13,11 @@ jobs:
       
       - name: create zip
         run: |
-          zip -r MY-CUSTOM-NAME.zip .
+          zip -r poisoned-prism.zip . -x .git .github .gitignore README.md
       
       - name: capture zip
         uses: actions/upload-artifact@v7.0.1
         with:
           path: |
-            MY-CUSTOM-NAME.zip
+            poisoned-prism.zip
           archive: false
