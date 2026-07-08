@@ -2,7 +2,6 @@ name: build zip
 on: [ pull_request, push ]
 
 env:
-  PACK_NAME: poisoned-prism
   PACK_TYPE: combined
   PACK_VERSION: 0.1
 
@@ -15,11 +14,11 @@ jobs:
       
       - name: create zip
         run: |
-          zip -r "$PACK_NAME-$PACK_TYPE-$PACK_VERSION.zip" . -x ".git/*" ".github/*" .gitignore README.md
+          zip -r $PACK_NAME-$PACK_TYPE-$PACK_VERSION.zip . -x ".git/*" ".github/*" .gitignore README.md
       
       - name: capture zip
         uses: actions/upload-artifact@v7.0.1
         with:
           path: |
-            "$PACK_NAME-$PACK_TYPE-$PACK_VERSION.zip"
+            $PACK_NAME-$PACK_TYPE-$PACK_VERSION.zip
           archive: false
