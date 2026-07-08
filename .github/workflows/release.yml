@@ -1,19 +1,21 @@
 name: build zip
 on: [ pull_request, push ]
 
+env:
+  PACK_NAME: poisoned-prism
+  PACK_TYPE: combined
+  PACK_VERSION: 0.1
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        java: [ 21 ]
     steps:
       - name: checkout repository
         uses: actions/checkout@v3
       
       - name: create zip
         run: |
-          zip -r poisoned-prism.zip . -x ".git/*" ".github/*" .gitignore README.md
+          zip -r $PACK_NAME-$PACK_TYPE-$PACK_VERSION.zip . -x ".git/*" ".github/*" .gitignore README.md
       
       - name: capture zip
         uses: actions/upload-artifact@v7.0.1
