@@ -13,7 +13,7 @@ jobs:
       
       - name: create zip
         run: |
-          zip -r poisoned-prism.zip . -x .git .github .gitignore README.md
+          zip -r poisoned-prism.zip . -x .git. .github. .gitignore README.md
       
       - name: capture zip
         uses: actions/upload-artifact@v7.0.1
