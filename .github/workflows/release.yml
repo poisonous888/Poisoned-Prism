@@ -3,7 +3,6 @@ on: [ pull_request, push ]
 
 env:
   NAME: poisoned-prism
-  TYPE: FULL
   VERSION: 0.1
 
 jobs:
@@ -13,13 +12,18 @@ jobs:
       - name: checkout repository
         uses: actions/checkout@v3
       
-      - name: create zip
+      - name: create full zip
         run: |
-          zip -r ${{ env.NAME }}-${{ env.TYPE }}-${{ env.VERSION }}.zip . -x ".git/*" ".github/*" .gitignore README.md
+          zip -r ${{ env.NAME }}-FULL-${{ env.VERSION }}.zip . -x ".git/*" ".github/*" .gitignore README.md
+          
+      - name: create equipment zip
+        run: |
+          zip -r ${{ env.NAME }}-EQUIPMENT-${{ env.VERSION }}.zip . -x ".git/*" ".github/*" .gitignore README.md
       
       - name: capture zip
         uses: actions/upload-artifact@v7.0.1
         with:
           path: |
-            ${{ env.NAME }}-${{ env.TYPE }}-${{ env.VERSION }}.zip
+            ${{ env.NAME }}-FULL-${{ env.VERSION }}.zip
+            ${{ env.NAME }}-EQUIPMENT-${{ env.VERSION }}.zip
           archive: false
