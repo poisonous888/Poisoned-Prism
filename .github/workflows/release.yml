@@ -1,0 +1,37 @@
+name: Upload Zipped Directory to Release
+
+on:
+  release:
+    types: [created]
+
+permissions:
+  contents: write
+
+jobs:
+  upload-assets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Zip the folder correctly
+        run: |
+          # 1. Move into the target folder
+          cd folder
+          
+          # 2. Zip everything inside it using an absolute workspace path
+          zip -r "$GITHUB_WORKSPACE/YOUR-CHOSEN-NAME.zip" .
+          
+          # 3. Move back out
+          cd "$GITHUB_WORKSPACE"
+          
+          # 4. VERIFICATION: Force the log to show us if the file exists
+          echo "=== VERIFYING FILE LOCATION ==="
+          ls -la YOUR-CHOSEN-NAME.zip
+
+      - name: upload release jar
+        uses: actions/upload-artifact@v7.0.1
+        with:
+          path: |
+            YOUR-CHOSEN-NAME.zip
+          archive: false
