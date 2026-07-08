@@ -1,27 +1,24 @@
-name: Upload Release Asset
-
-on:
-  release:
-    types: [created]
+name: build zip
+on: [ pull_request, push ]
 
 jobs:
-  upload:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write  # Crucial for allowing the action to upload assets
-
+    strategy:
+      matrix:
+        java: [ 21 ]
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      # (Optional) Add steps here to build your file if needed
-      # Example: run: npm run build or run: gcc main.c -o my-app
-
-      - name: Upload Binaries to Release
-        uses: softprops/action-gh-release@v2
+      - name: checkout repository
+        uses: actions/checkout@v3
+      
+      - name: create zip
+        run: |
+          zip -r ../MY-CUSTOM-NAME.zip .
+          cd ..
+      
+      - name: capture zip
+        uses: actions/upload-artifact@v7.0.1
         with:
-          files: |
-            path/to/your/file.txt
-            path/to/another/artifact.zip
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          path: |
+            MY-CUSTOM-NAME.zip
+          archive: false
