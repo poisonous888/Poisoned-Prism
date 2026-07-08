@@ -16,13 +16,22 @@ jobs:
 
       - name: Zip the folder correctly
         run: |
+          # 1. Move into the target folder
           cd folder
-          zip -r ../MY-CUSTOM-NAME.zip .
-          cd ..
+          
+          # 2. Zip everything inside it using an absolute workspace path
+          zip -r "$GITHUB_WORKSPACE/YOUR-CHOSEN-NAME.zip" .
+          
+          # 3. Move back out
+          cd "$GITHUB_WORKSPACE"
+          
+          # 4. VERIFICATION: Force the log to show us if the file exists
+          echo "=== VERIFYING FILE LOCATION ==="
+          ls -la YOUR-CHOSEN-NAME.zip
 
-      - name: Upload Zip to Release
-        uses: softprops/action-gh-release@v2
+      - name: upload release jar
+        uses: actions/upload-artifact@v7.0.1
         with:
-          files: MY-CUSTOM-NAME.zip
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          path: |
+            YOUR-CHOSEN-NAME.zip
+          archive: false
