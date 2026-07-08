@@ -1,11 +1,11 @@
 {
-    "model":{
-        "type":"condition","property":"selected",
-	"on_true":{
-		"type":"condition","property":"keybind_down","keybind":"key.use",
-        	"on_true":{"type":"model","model":"psnprsm:sword/stone"},
-        	"on_false":{"type":"model","model":"item/stone_sword"}
-	},
-	"on_false":{"type":"model","model":"item/stone_sword"}
+    "model": {
+        "type": "condition", "property": "selected",
+        "on_true": {
+            "type": "condition", "property": "keybind_down", "keybind": "key.use",
+            "on_true": {"type": "model", "model": "psnprsm:sword/stone"},
+            "on_false": {"type": "model", "model": "item/stone_sword"}
+        },
+        "on_false": {"type": "model", "model": "item/stone_sword"}
     }
 }

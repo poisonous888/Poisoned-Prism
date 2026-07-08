@@ -1,19 +1,7 @@
 {
     "model":{
-        "type":"condition","property":"component","predicate":"custom_data","value":{"id":"BONZO_STAFF"},
-        "on_true":{"type":"model","model":"psnprsm:random/bonzo_staff"},
-        "on_false":{
-        "type":"condition","property":"component","predicate":"custom_data","value":{"id":"STARRED_BONZO_STAFF"},
-        "on_true":{"type":"model","model":"psnprsm:random/bonzo_staff"},
-        "on_false":{
-        "type":"condition","property":"component","predicate":"custom_data","value":{"id":"GYROKINETIC_WAND"},
-        "on_true":{"type":"model","model":"psnprsm:random/gyro"},
-        "on_false":{
         "type":"condition","property":"component","predicate":"custom_data","value":{"id":"TACTICAL_INSERTION"},
         "on_true":{"type":"model","model":"psnprsm:random/tactical_insertion"},
         "on_false":{"type":"model","model":"item/blaze_rod"}
-        }
-        }
-        }
     }
 }

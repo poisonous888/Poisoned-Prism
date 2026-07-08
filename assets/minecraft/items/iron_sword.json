@@ -1,23 +1,11 @@
 {
-    "model":{
-        "type":"condition","property":"component","predicate":"custom_data","value":"{'enchantments':{'ultimate_chimera':4}}",
-        "on_true":{
-            "type":"condition","property":"component","predicate":"custom_data","value":{"id":"HYPERION"},
-            "on_true":{"type":"model","model":"psnprsm:random/chimhype"},
-            "on_false":{"type":"model","model":"item/iron_sword"}
+    "model": {
+        "type": "condition", "property": "selected",
+        "on_true": {
+            "type": "condition", "property": "keybind_down", "keybind": "key.use",
+            "on_true": {"type": "model", "model": "psnprsm:sword/iron"},
+            "on_false": {"type": "model", "model": "item/iron_sword"}
         },
-        "on_false":{
-        "type":"condition","property":"component","predicate":"custom_data","value":{"id":"CACTUS_KNIFE"},
-        "on_true":{"type":"model","model":"psnprsm:farming/cactus"},
-        "on_false":{
-        "type":"condition","property":"keybind_down","keybind":"key.use",
-        "on_true":{
-            "type":"condition","property":"selected",
-            "on_true":{"type":"model","model":"psnprsm:sword/iron"},
-            "on_false":{"type":"model","model":"item/iron_sword"}
-        },
-        "on_false":{"type":"model","model":"item/iron_sword"}
-        }
-        }
+        "on_false": {"type": "model", "model": "item/iron_sword"}
     }
 }

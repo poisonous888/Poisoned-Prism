@@ -1,30 +1,8 @@
 {
     "model":{
-        "type":"condition","property":"component","predicate":"custom_data","value":{"id":"FLAMING_FLAY"},
-        "on_true":{"type":"model","model":"psnprsm:random/flay"},
-        "on_false":{
-        "type":"condition","property":"component","predicate":"custom_data","value":{"id":"ROD_OF_THE_SEA"},
-        "on_true":{
-            "type": "minecraft:condition",
-            "property": "minecraft:fishing_rod/cast",
-            "on_true":{"type":"model","model":"psnprsm:random/rots_cast"},
-            "on_false":{"type":"model","model":"psnprsm:random/rots"}
-        },
-        "on_false":{
-        "type":"condition","property":"component","predicate":"custom_data","value":{"id":"HELLFIRE_ROD"},
-        "on_true":{
-            "type": "minecraft:condition",
-            "property": "minecraft:fishing_rod/cast",
-            "on_true":{"type":"model","model":"psnprsm:random/hellfire_cast"},
-            "on_false":{"type":"model","model":"psnprsm:random/hellfire"}
-        },
-        "on_false":{
-            "type": "minecraft:condition",
-            "property": "minecraft:fishing_rod/cast",
-            "on_true":{"type":"model","model":"minecraft:item/fishing_rod_cast"},
-            "on_false":{"type":"model","model":"minecraft:item/fishing_rod"}
-        }
-        }
-        }
-    }    
+        "type": "minecraft:condition",
+        "property": "minecraft:fishing_rod/cast",
+        "on_true": {"type": "model", "model": "minecraft:item/fishing_rod_cast"},
+        "on_false": {"type": "model", "model": "minecraft:item/fishing_rod"}
+    }
 }
