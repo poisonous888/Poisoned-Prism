@@ -1,1 +1,12 @@
-{"model":{"type":"minecraft:model","model":"hypixel_skyblock:item/collections/gemstone/ruby/rough_ruby_gem"}}
+{
+    "model": {
+        "type": "model",
+        "model": "psnprsm:mining/gemstone/round/rough",
+        "tints": [
+            {
+                "type": "minecraft:constant",
+                "value": [ 1, 0.1, 0.1 ]
+            }
+        ]
+    }
+}

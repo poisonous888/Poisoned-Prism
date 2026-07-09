@@ -1,7 +1,7 @@
 {
     "model":{
         "type":"condition","property":"component","predicate":"custom_data","value":{"id":"TACTICAL_INSERTION"},
-        "on_true":{"type":"model","model":"psnprsm:random/tactical_insertion"},
+        "on_true":{"type":"model","model":"item/blaze_rod"},
         "on_false":{"type":"model","model":"item/blaze_rod"}
     }
 }
