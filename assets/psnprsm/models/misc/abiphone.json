@@ -1,1 +1,1 @@
-{"parent":"minecraft:item/generated","textures":{"layer0":"psnprsm:item/misc/abiphone"}}
+{"parent":"item/generated","textures":{"layer0":"psnprsm:item/misc/abiphone"}}

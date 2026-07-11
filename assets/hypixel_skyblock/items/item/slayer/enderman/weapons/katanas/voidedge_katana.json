@@ -7,12 +7,12 @@
                 "threshold": 0.001,
                 "model": {
                     "type": "model",
-                    "model": "minecraft:item/golden_sword"
+                    "model": "item/golden_sword"
                 }
             }
         ],
         "fallback": {
-            "type": "model", "model": "minecraft:item/diamond_sword"
+            "type": "model", "model": "item/diamond_sword"
         }
     }
 }

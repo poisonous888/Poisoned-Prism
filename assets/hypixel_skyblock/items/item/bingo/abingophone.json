@@ -1,1 +1,6 @@
-{"model":{"type":"minecraft:model","model":"hypixel_skyblock:item/bingo/abingophone"}}
+{
+    "model": {
+        "type":"model",
+        "model":"psnprsm:misc/abiphone"
+    }
+}

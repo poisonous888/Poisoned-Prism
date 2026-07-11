@@ -1,18 +1,18 @@
 {
     "model": {
-        "type": "minecraft:select",
-        "property": "minecraft:display_context",
+        "type": "select",
+        "property": "display_context",
         "cases": [
             {
                 "model": {
-                    "type": "minecraft:model",
+                    "type": "model",
                     "model": "psnprsm:combat/slayer/zombie/falchion/halberd_inv"
                 },
                 "when": ["gui", "ground", "fixed", "on_shelf"]
             },
             {
                 "model": {
-                    "type": "minecraft:model",
+                    "type": "model",
                     "model": "psnprsm:combat/slayer/zombie/falchion/halberd"
                 },
                 "when": ["none"]

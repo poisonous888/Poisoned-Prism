@@ -5,9 +5,9 @@
             "on_true":{
                 "type":"condition","property":"keybind_down","keybind":"key.use",
                 "on_true":{"type":"model","model":"psnprsm:sword/netherite"},
-                "on_false":{"type":"model","model":"minecraft:item/netherite_sword"}
+                "on_false":{"type":"model","model":"item/netherite_sword"}
             },
-            "on_false":{"type":"model","model":"minecraft:item/netherite_sword"}
+            "on_false":{"type":"model","model":"item/netherite_sword"}
         
     }
 }

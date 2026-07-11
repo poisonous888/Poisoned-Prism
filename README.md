@@ -2,13 +2,18 @@
 my personal texture pack, made out of far too many resource packs to list them all. \
 \
 features:\
+|- (future) seperate full, equipment, sfx, and cit versions
 |- fully integrated blockhit, completelly vanilla! works just like 1.7 except with no slowdown because its visual \
 |- custom terminator textures based on ultimate enchant. enchanted book textures for the different enchantments. \
 |- 32x handheld items for weapons that deserve it \
 |- snow \
 |- midgame to endgame focused. earlygame items and museum fodder get vanilla models.\
+|- custom font and audio \
 \
-if you find a missing texture, let me know through the issues tab. if you have a texture you want me to add, feel free to make a pull request
+modrinth: https://modrinth.com/resourcepack/poisonedprism \
+github: https://github.com/poisonous888/Poisoned-Prism \
+\
+if you find a missing texture, please let me know through the issues tab in the linked github. if you have a texture you want me to add, feel free to make a pull request. \
 \
 the main packs used are:\
 |- Prism 16x - the main source of the weapons and armor - https://www.youtube.com/watch?v=37j4ga-ZlYU or https://modrinth.com/collection/EX0tYYtW \
@@ -18,3 +23,5 @@ the main packs used are:\
 |- furfsky/fursky - various custom textures - https://furfsky.net/ \
 |- official skyblock pack - a lot of the 32x held items come from this - no download, but you can get by going into the "data" folder in your minecraft instance and renaming the file to a .zip \
 |- MANY more \
+
+

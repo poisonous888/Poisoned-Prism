@@ -1,1 +1,1 @@
-{"parent":"minecraft:item/generated","textures":{"layer0":"psnprsm:item/books/lethality"}}
+{"parent":"item/generated","textures":{"layer0":"psnprsm:item/books/lethality"}}

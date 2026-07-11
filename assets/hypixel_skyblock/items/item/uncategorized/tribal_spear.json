@@ -1,16 +1,16 @@
 {
-    "model":{
-        "type":"select","property":"display_context",
-        "cases":[
+    "model": {
+        "type": "select", "property": "display_context",
+        "cases": [
             {
-                "model":{
-                    "type":"model","model":"psnprsm:combat/dungeon/utility/tribal_spear"
+                "model": {
+                    "type": "model", "model": "psnprsm:combat/dungeon/utility/tribal_spear"
                 },
-                "when":["none"]
+                "when": [ "none" ]
             }
         ],
-        "fallback":{
-            "type":"model","model":"psnprsm:combat/dungeon/utility/tribal_spear_inv"
+        "fallback": {
+            "type": "model", "model": "psnprsm:combat/dungeon/utility/tribal_spear_inv"
         }
     }
 }

@@ -1,1 +1,1 @@
-{"parent":"minecraft:item/bow","textures":{"layer0":"psnprsm:item/combat/slayer/enderman/terminator/fatal_tempo"}}
+{"parent":"item/bow","textures":{"layer0":"psnprsm:item/combat/slayer/enderman/terminator/fatal_tempo"}}

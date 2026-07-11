@@ -1,6 +1,1 @@
-{
-    "model": {
-        "type": "minecraft:model",
-        "model": "minecraft:item/golden_axe"
-    }
-}
+{"model":{"type":"model","model":"item/golden_axe"}}

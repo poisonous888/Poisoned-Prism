@@ -1,1 +1,1 @@
-{"parent":"minecraft:item/bow","textures":{"layer0":"psnprsm:item/combat/slayer/enderman/terminator/soul_eater"}}
+{"parent":"item/bow","textures":{"layer0":"psnprsm:item/combat/slayer/enderman/terminator/soul_eater"}}

@@ -1,1 +1,1 @@
-{"parent":"minecraft:item/handheld","textures":{"layer0":"psnprsm:item/foraging/hunting/huntaxe"}}
+{"parent":"item/handheld","textures":{"layer0":"psnprsm:item/foraging/hunting/huntaxe"}}

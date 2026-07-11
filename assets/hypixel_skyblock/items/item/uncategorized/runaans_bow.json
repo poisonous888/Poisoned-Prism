@@ -1,6 +1,1 @@
-{
-    "model": {
-        "type": "minecraft:model",
-        "model": "minecraft:item/bow"
-    }
-}
+{"model":{"type":"model","model":"item/bow"}}

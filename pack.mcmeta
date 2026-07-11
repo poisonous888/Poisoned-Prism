@@ -1,6 +1,6 @@
 {
 	"pack":{
-		"description": "§cItems & Entities §7for\n§cPoisoned §bPrism",
+		"description": "§c§cPoisoned §bPrism",
 		"supported_formats": {"min_inclusive": 34, "max_inclusive": 750},
 		"min_format": [34,1],
 		"max_format": [750,1],

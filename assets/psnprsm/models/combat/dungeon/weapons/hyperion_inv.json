@@ -1,1 +1,1 @@
-{"parent":"minecraft:item/handheld","textures":{"layer0":"psnprsm:item/combat/dungeon/weapons/hyperion"}}
+{"parent":"item/handheld","textures":{"layer0":"psnprsm:item/combat/dungeon/weapons/hyperion"}}

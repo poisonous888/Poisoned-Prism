@@ -1,1 +1,1 @@
-{"parent":"minecraft:item/handheld","textures":{"layer0":"psnprsm:item/farming/tools/carrot"}}
+{"parent":"item/handheld","textures":{"layer0":"psnprsm:item/farming/tools/carrot"}}

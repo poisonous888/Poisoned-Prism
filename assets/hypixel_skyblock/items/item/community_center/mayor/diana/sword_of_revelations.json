@@ -1,5 +1,1 @@
-{
-    "model":{
-        "type":"model","model":"minecraft:item/wooden_sword"
-    }
-}
+{"model":{"type":"model","model":"item/wooden_sword"}}

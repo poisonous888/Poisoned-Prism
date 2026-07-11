@@ -1,1 +1,1 @@
-{"parent":"minecraft:item/handheld","textures":{"layer0":"psnprsm:item/combat/dungeon/utility/bonzo"}}
+{"parent":"item/handheld","textures":{"layer0":"psnprsm:item/combat/dungeon/utility/bonzo"}}
