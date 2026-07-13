@@ -10,10 +10,7 @@ features:\
 |- midgame to endgame focused. earlygame items and museum fodder get vanilla models.\
 |- custom font and audio \
 \
-modrinth: https://modrinth.com/resourcepack/poisonedprism \
-github: https://github.com/poisonous888/Poisoned-Prism \
-\
-if you find a missing texture, please let me know through the issues tab in the linked github. if you have a texture you want me to add, feel free to make a pull request. \
+if you find a missing texture, please let me know through the issues tab. if you have a texture you want me to add, feel free to make a pull request. \
 \
 the main packs used are:\
 |- Prism 16x - the main source of the weapons and armor - https://www.youtube.com/watch?v=37j4ga-ZlYU or https://modrinth.com/collection/EX0tYYtW \

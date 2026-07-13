@@ -1,1 +1,11 @@
-{"model":{"type":"minecraft:model","model":"hypixel_skyblock:item/island_relevant/rift/zones/castle/swords/silver_twist_karambit"}}
+{
+    "model": {
+        "type": "condition", "property": "selected",
+        "on_true": {
+            "type": "condition", "property": "keybind_down", "keybind": "key.use",
+            "on_true": { "type": "model", "model": "psnprsm:rift/weapons/karambit_blocked" },
+            "on_false": { "type": "model", "model": "psnprsm:rift/weapons/karambit" }
+        },
+        "on_false": { "type": "model", "model": "psnprsm:rift/weapons/karambit" }
+    }
+}
