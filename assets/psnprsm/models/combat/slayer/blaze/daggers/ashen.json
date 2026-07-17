@@ -1,1 +1,1 @@
-{"parent":"psnprsm:item/big_sword","textures":{"layer0":"psnprsm:item/combat/slayer/blaze/daggers/ashen"}}
+{"parent":"item/handheld","textures":{"layer0":"item/stone_sword"}}

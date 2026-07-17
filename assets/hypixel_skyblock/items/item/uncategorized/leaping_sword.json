@@ -1,1 +1,11 @@
-{"model":{"type":"minecraft:model","model":"hypixel_skyblock:item/uncategorized/leaping_sword"}}
+{
+    "model": {
+        "type": "condition", "property": "selected",
+        "on_true": {
+            "type": "condition", "property": "keybind_down", "keybind": "key.use",
+            "on_true": {"type": "model", "model": "psnprsm:foraging/weapons/leaping_blocked"},
+            "on_false": {"type": "model", "model": "psnprsm:foraging/weapons/leaping"}
+        },
+        "on_false": {"type": "model", "model": "psnprsm:foraging/weapons/leaping"}
+    }
+}

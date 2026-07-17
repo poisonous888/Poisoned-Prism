@@ -4,13 +4,13 @@
         "cases": [
             {
                 "model": {
-                    "type": "model", "model": "psnprsm:combat/dungeon/utility/tribal_spear"
+                    "type": "model", "model": "item/stone_spear"
                 },
-                "when": [ "none" ]
+                "when": ["gui","ground","fixed","on_shelf"]
             }
         ],
         "fallback": {
-            "type": "model", "model": "psnprsm:combat/dungeon/utility/tribal_spear_inv"
+            "type": "model", "model": "item/stone_spear_in_hand"
         }
     }
 }

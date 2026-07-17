@@ -1,50 +1,16 @@
 {
-    "model":{
-        "type":"condition","property":"selected",
-        "on_true":{
-            "type":"condition","property":"keybind_down","keybind":"key.use",
-            "on_true":{"type": "condition",
-                "property": "component",
-                "predicate": "custom_data",
-                "value": "{td_attune_mode:3}",
-                "on_false": {
-                    "type": "model",
-                    "model": "psnprsm:combat/slayer/blaze/daggers/spirit"
-                },
-                "on_true": {
-                    "type": "model",
-                    "model": "psnprsm:combat/slayer/blaze/daggers/crystal"
-                }
-            },
-            "on_false":{
-                "type": "condition",
-                "property": "component",
-                "predicate": "custom_data",
-                "value": "{td_attune_mode:3}",
-                "on_false": {
-                    "type": "model",
-                    "model": "psnprsm:combat/slayer/blaze/daggers/spirit"
-                },
-                "on_true": {
-                    "type": "model",
-                    "model": "psnprsm:combat/slayer/blaze/daggers/crystal"
-                }
-            }
+    "model": {
+        "type": "condition",
+        "property": "component",
+        "predicate": "custom_data",
+        "value": "{td_attune_mode:3}",
+        "on_false": {
+            "type": "model",
+            "model": "psnprsm:combat/slayer/blaze/daggers/spirit"
         },
-        "on_false":{
-            "type": "condition",
-            "property": "component",
-            "predicate": "custom_data",
-            "value": "{td_attune_mode:3}",
-            "on_false": {
-                "type": "model",
-                "model": "psnprsm:combat/slayer/blaze/daggers/spirit"
-            },
-            "on_true": {
-                "type": "model",
-                "model": "psnprsm:combat/slayer/blaze/daggers/crystal"
-            }
+        "on_true": {
+            "type": "model",
+            "model": "psnprsm:combat/slayer/blaze/daggers/crystal"
         }
     }
 }
-

@@ -1,11 +1,4 @@
 {
-    "model":{
-        "type": "condition", "property": "selected",
-        "on_true": {
-            "type": "condition", "property": "keybind_down", "keybind": "key.use",
-            "on_true": {"type": "model", "model": "psnprsm:combat/dungeon/weapons/giants_sword_blocked"},
-            "on_false": {"type": "model", "model": "psnprsm:combat/dungeon/weapons/giants_sword"}
-        },
-        "on_false":{"type":"model","model":"psnprsm:combat/dungeon/weapons/giants_sword"}
-    }
+    "model":{ "type": "model", "model": "psnprsm:combat/dungeon/weapons/giants_sword_inv" },
+    "oversized_in_gui": true
 }
