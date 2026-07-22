@@ -1,0 +1,6 @@
+item.big_sword - furfsky
+item.drill - furfsky
+item.handheld - minecraft
+item.sword_32x - hypixel
+item.<else> - custom
+<else> - custom

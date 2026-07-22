@@ -1,0 +1,82 @@
+credits
+
+i do not take credit for any of the resources in this pack, unless stated otherwise (denoted custom). any modifications to textures are done with pixilart.com/draw unless stated otherwise. assembled by poisonous888.
+
+links for texture packs
+prism - https://www.youtube.com/watch?v=37j4ga-ZlYU
+-> cotton candy recolor
+snowfault - https://www.youtube.com/watch?v=DCFDBly4sA0
+-> pretty sure this is the 1
+timedeo 2k - https://www.youtube.com/watch?v=Xr7vW4exNUs
+nebula 16x - https://www.youtube.com/watch?v=U1fbMy32wvs
+-> ruby recolor
+Diemant's Prismarine - https://modrinth.com/resourcepack/diemants-prismarine
+piston sounds - https://www.reddit.com/r/Minecraft/comments/1ctvv3c/my_new_enhanced_piston_sound_effects/
+CodeCrafted Custom - https://codecrafted.net/#texturepack
+looshy dark mode - https://modrinth.com/resourcepack/looshy-dark-mode
+
+- blocks, blockstates, and colormap are mainly from snowfault 16x
+>>> tnt is from prism
+>>> fire is from prism cotton candy reocolor
+>>> glass as well as the CTM glass textures are not from there
+>>> crops are from modern version (i think)
+>>> string is not from there, tho i dont think its custom either
+>>> prismarine is from Diemant's Prismarine
+>>> prismarine bricks are from seamless prismarine bricks
+
+- items and armor are mainly from prism cotton candy reocolor
+>>> bow textures are from nebula ruby recolor
+>>> leather armor is from some timedeo pack
+>>> prismarine shards and crystals is from Diemant's Prismarine
+>>> arrows are from timedeo 2k revamp
+>>> stick texture is custom, based off the arrow texture?
+
+- custom item textures (CIT) is adapted from furfsky
+>>> any animations are removed by cropping the image around 1 specific frame
+>>> additionally, bonzo staff and ice spray have been shortened and ice spray has had the handle color changed to match the stick texture, to match the rest of the pack
+>>> zombie slayer wands is from hypixel skyblock pack from packsHQ, and has been shortened and had the handle color changed to match the stick texture, to match the rest of the pack
+
+- sounds
+>>> cat sounds are from the Minecraft wiki, to replicate the sounds heard in higher versions
+>>> guardian death is from the calamity wiki, specifically the shoot sound from halley's inferno, and has been pitched down to counteract the pitching effects heard in game
+>>> iron golem throw is from the calamity wiki, specifically the slash sound from exoblade, and has had the volume lowered (i think)
+>>> successful hit is from the calamity wiki. i cant remember the page, but it is also the first sound under hurt (crystal aura) on the ither beast page on the terraria wiki
+>>> bow sound is from some pack i saw in a video, no idea what its called or where to find it
+>>> piston sounds are from a loud piston texture pack and have hade their volume decreased HEAVILY
+
+- icons are from timedeo 2K revamp with the following changes
+>>> crosshair is custom
+>>> hearts are custom, with the exception of the default hearts, which are the wither hearts from timedeo 2K revamp, which is the inspiration for the rest of the hearts
+>>> armor bars are from some resource pack
+>>> bubbles i have no clue
+>>> hunger bars are from melon hunger bar texture pack
+>>> experience bars and server ping bars (and the other ones that look like them) are from the same place, but i don't remember where. might be tightfault revamp.
+>>> attack indicators are custom, with inspiration from vanilla
+
+- inventory and other containers are from looshy dark mode
+
+- particles are from snowfault, changed to work with 1.21
+
+- enchanted item glint i have absolutely no clue
+>>> pumpkinblur and underwater are blank textures
+
+- sky
+night sky: BlayzRoc's Night Sky - Blue/Red Nebula [1024x]
+- https://www.planetminecraft.com/texture-pack/blayzroc-s-night-sky-blue-red-nebula-1024x/
+day sky: toy car (black and white)
+- https://www.youtube.com/watch?v=J2Yk_TGXSQ0
+
+- mods
+>>> slot locking textures in skyblockaddons and notenoughupdates are custom
+>>> appleskin hunger textures are custom, adapted from melon hunger bars
+
+prism credits:
+day sky + sunset sky edited from real nature pack by tirenay
+blocks edited from defrosted 16x by keno and looshy
+fire textures edited from infinite 16x
+
+
+
+
+
+

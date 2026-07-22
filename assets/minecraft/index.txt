@@ -1,0 +1,4 @@
+items/ - custom or vanilla
+lang/ - custom
+shaders/ - vanilla tweaks
+sounds - TODO sounds

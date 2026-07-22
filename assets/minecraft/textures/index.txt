@@ -1,0 +1,12 @@
+environment/rain - TODO find/change
+environment/celestial/end_flash - vanilla
+environment/<else> - custom
+
+font/ - TODO find
+
+gui/container/inventory - custom
+gui/container/<else> looshy dark mode
+gui/title/ - textcraft
+
+misc/spyglass_scope - TODO find
+misc/<else> - custom

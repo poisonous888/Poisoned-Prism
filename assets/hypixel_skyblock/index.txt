@@ -1,0 +1,2 @@
+textures - hypixel
+item models - hypixel (phasing out) or custom
