@@ -41,11 +41,22 @@ jobs:
 
       - name: create EQUIPMENT zip
         run: |
-          zip -r ${{ env.NAME }}-EQUIPMENT-${{ env.VERSION }}.zip . -i pack.png pack.mcmeta "assets/psnprsm/*" "assets/hypixel_skyblock/*" assets/minecraft/items/* assets/minecraft/models/item/* assets/minecraft/textures/item/* assets/minecraft/textures/misc/* assets/minecraft/textures/entity/projectiles/* "assets/minecraft/textures/entity/equipment/*"
+          zip -r ${{ env.NAME }}-EQUIPMENT-${{ env.VERSION }}.zip . -i pack.png pack.mcmeta "assets/psnprsm/*" "assets/hypixel_skyblock/*" assets/minecraft/items/* assets/minecraft/models/item/* assets/minecraft/textures/item/* assets/minecraft/textures/misc/* assets/minecraft/textures/font/* assets/minecraft/textures/particle/* assets/minecraft/textures/entity/projectiles/* "assets/minecraft/textures/entity/equipment/*" assets/minecraft/textures/entity/fishing/* assets/minecraft/textures/entity/experience/* assets/minecraft/textures/entity/creeper/creeper_armor.png
 
       - name: capture EQUIPMENT zip
         uses: actions/upload-artifact@v7.0.1
         with:
           path: |
             ${{ env.NAME }}-EQUIPMENT-${{ env.VERSION }}.zip
+          archive: false
+
+      - name: create WORLD zip
+        run: |
+          zip -r ${{ env.NAME }}-WORLD-${{ env.VERSION }}.zip . -i pack.png pack.mcmeta assets/minecraft/lang/* assets/minecraft/optifine/ctm/* assets/minecraft/shaders/* assets/minecraft/models/block/* assets/minecraft/textures/block/* assets/minecraft/textures/environment/* assets/minecraft/textures/entity/* -x assets/minecraft/textures/entity/projectiles/* "assets/minecraft/textures/entity/equipment/*" assets/minecraft/textures/entity/player/* assets/minecraft/textures/entity/fishing/* assets/minecraft/textures/entity/experience/*
+
+      - name: capture WORLD zip
+        uses: actions/upload-artifact@v7.0.1
+        with:
+          path: |
+            ${{ env.NAME }}-WORLD-${{ env.VERSION }}.zip
           archive: false
