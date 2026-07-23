@@ -52,7 +52,7 @@ jobs:
 
       - name: create WORLD zip
         run: |
-          zip -r ${{ env.NAME }}-WORLD-${{ env.VERSION }}.zip . -i pack.png pack.mcmeta assets/minecraft/lang/* "assets/minecraft/optifine/ctm/*" assets/minecraft/shaders/* assets/minecraft/models/block/* assets/minecraft/textures/block/* assets/minecraft/textures/environment/* assets/minecraft/textures/entity/* -x assets/minecraft/textures/entity/projectiles/* "assets/minecraft/textures/entity/equipment/*" assets/minecraft/textures/entity/player/* assets/minecraft/textures/entity/fishing/* assets/minecraft/textures/entity/experience/*
+          zip -r ${{ env.NAME }}-WORLD-${{ env.VERSION }}.zip . -i pack.png pack.mcmeta assets/minecraft/lang/* "assets/minecraft/optifine/ctm/*" "assets/minecraft/shaders/*" assets/minecraft/models/block/* assets/minecraft/textures/block/* "assets/minecraft/textures/environment/*" "assets/minecraft/textures/entity/*" -x assets/minecraft/textures/entity/projectiles/* "assets/minecraft/textures/entity/equipment/*" assets/minecraft/textures/entity/player/* assets/minecraft/textures/entity/fishing/* assets/minecraft/textures/entity/experience/*
 
       - name: capture WORLD zip
         uses: actions/upload-artifact@v7.0.1
