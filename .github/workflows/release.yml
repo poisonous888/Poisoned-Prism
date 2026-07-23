@@ -23,6 +23,10 @@ jobs:
             ${{ env.NAME }}-FULL-${{ env.VERSION }}.zip
           archive: false
 
+      - name: remove full zip
+        run: |
+          rmdir ${{ env.NAME }}-FULL-${{ env.VERSION }}.zip
+
       - name: create CIT zip
         run: |
           zip -r ${{ env.NAME }}-CIT-${{ env.VERSION }}.zip . -x ".git/*" ".github/*" .gitignore README.md assets/appleskin/* assets/minecraft.*
