@@ -31,7 +31,7 @@ jobs:
         uses: actions/upload-artifact@v7.0.1
         with:
           path: |
-            ${{ env.NAME }}-EQUIPMENT-${{ env.VERSION }}.zip
+            ${{ env.NAME }}-CIT-${{ env.VERSION }}.zip
           archive: false
 #
 #      - name: create sfx zip
