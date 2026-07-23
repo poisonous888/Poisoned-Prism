@@ -28,9 +28,9 @@ jobs:
             ${{ env.NAME }}-FULL-${{ env.VERSION }}.zip
           archive: false
 
-      - name: remove full zip
-        run: |
-          rm ${{ env.NAME }}-FULL-${{ env.VERSION }}.zip
+#      - name: remove full zip
+#        run: |
+#          rm ${{ env.NAME }}-FULL-${{ env.VERSION }}.zip
 
       - name: create CIT zip
         run: |
@@ -43,6 +43,17 @@ jobs:
             ${{ env.NAME }}-CIT-${{ env.VERSION }}.zip
           archive: false
 
-      - name: remove CIT zip
-        run: |
-          rm ${{ env.NAME }}-CIT-${{ env.VERSION }}.zip
+#      - name: remove CIT zip
+#        run: |
+#          rm ${{ env.NAME }}-CIT-${{ env.VERSION }}.zip
+
+#      - name: create EQUIPMENT zip
+#        run: |
+#          zip -r ${{ env.NAME }}-EQUIPMENT-${{ env.VERSION }}.zip . -i pack.png pack.mcmeta "assets/psnprsm/*" "assets/hypixel_skyblock/*" assets/minecraft/items/* assets/minecraft/models/item/*
+#
+#      - name: capture EQUIPMENT zip
+#        uses: actions/upload-artifact@v7.0.1
+#        with:
+#          path: |
+#            ${{ env.NAME }}-CIT-${{ env.VERSION }}.zip
+#          archive: false
