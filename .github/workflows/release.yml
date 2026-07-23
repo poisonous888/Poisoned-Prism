@@ -29,7 +29,7 @@ jobs:
 
       - name: create CIT zip
         run: |
-          zip -r ${{ env.NAME }}-CIT-${{ env.VERSION }}.zip . -x ".git/*" ".github/*" .gitignore README.md "assets/appleskin/*" "assets/minecraft.*"
+          zip -r ${{ env.NAME }}-CIT-${{ env.VERSION }}.zip . -x ".git/*" ".github/*" .gitignore README.md "assets/appleskin/*" "assets/minecraft/*"
 
       - name: capture CIT zip
         uses: actions/upload-artifact@v7.0.1
