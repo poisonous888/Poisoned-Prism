@@ -23,16 +23,16 @@ jobs:
             ${{ env.NAME }}-FULL-${{ env.VERSION }}.zip
           archive: false
 
-#      - name: create equipment zip
-#        run: |
-#          zip -r ${{ env.NAME }}-EQUIPMENT-${{ env.VERSION }}.zip . -x ".git/*" ".github/*" .gitignore README.md
-#
-#      - name: capture equipment zip
-#        uses: actions/upload-artifact@v7.0.1
-#        with:
-#          path: |
-#            ${{ env.NAME }}-EQUIPMENT-${{ env.VERSION }}.zip
-#          archive: false
+      - name: create CIT zip
+        run: |
+          zip -r ${{ env.NAME }}-CIT-${{ env.VERSION }}.zip . -x ".git/*" ".github/*" .gitignore README.md assets/appleskin/* assets/minecraft.*
+
+      - name: capture equipment zip
+        uses: actions/upload-artifact@v7.0.1
+        with:
+          path: |
+            ${{ env.NAME }}-EQUIPMENT-${{ env.VERSION }}.zip
+          archive: false
 #
 #      - name: create sfx zip
 #        run: |
