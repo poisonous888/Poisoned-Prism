@@ -25,7 +25,7 @@ jobs:
 
       - name: remove full zip
         run: |
-          rmdir ${{ env.NAME }}-FULL-${{ env.VERSION }}.zip
+          rm ${{ env.NAME }}-FULL-${{ env.VERSION }}.zip
 
       - name: create CIT zip
         run: |
