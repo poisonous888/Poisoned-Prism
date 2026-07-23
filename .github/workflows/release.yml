@@ -14,8 +14,7 @@ jobs:
 
       - name: cull unused files
         run: |
-          rm ".git/*" 
-          rm ".github/*" .gitignore README.md "*/index.txt"
+          rm .git/ ".github/" .gitignore README.md "*/index.txt"
 
       - name: create full zip
         run: |
