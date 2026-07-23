@@ -41,7 +41,7 @@ jobs:
 
       - name: create EQUIPMENT zip
         run: |
-          zip -r ${{ env.NAME }}-EQUIPMENT-${{ env.VERSION }}.zip . -i pack.png pack.mcmeta "assets/psnprsm/*" "assets/hypixel_skyblock/*" assets/minecraft/items/* assets/minecraft/models/item/* assets/minecraft/textures/item/*
+          zip -r ${{ env.NAME }}-EQUIPMENT-${{ env.VERSION }}.zip . -i pack.png pack.mcmeta "assets/psnprsm/*" "assets/hypixel_skyblock/*" assets/minecraft/items/* assets/minecraft/models/item/* assets/minecraft/textures/item/* assets/minecraft/textures/misc/* assets/minecraft/textures/entity/projectiles/* assets/minecraft/textures/entity/equipment/*
 
       - name: capture EQUIPMENT zip
         uses: actions/upload-artifact@v7.0.1
