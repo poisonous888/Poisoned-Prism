@@ -19,7 +19,7 @@ jobs:
 
       - name: create full zip
         run: |
-          zip -r ${{ env.NAME }}-FULL-${{ env.VERSION }}.zip .
+          zip -r ${{ env.NAME }}-FULL-${{ env.VERSION }}.zip . -i "assets/*"
 
       - name: capture full zip
         uses: actions/upload-artifact@v7.0.1
