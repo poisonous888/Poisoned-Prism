@@ -1,6 +1,1 @@
-{
-    "model": {
-        "type":"model",
-        "model":"psnprsm:combat/dungeon/utility/bonzo_staff"
-    }
-}
+{"model":{"type":"model","model":"psnprsm:combat/dungeon/utility/bonzo"}}
