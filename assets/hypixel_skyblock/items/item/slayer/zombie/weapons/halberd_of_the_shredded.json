@@ -1,5 +1,9 @@
 {
     "model": {
+        "type":"model",
+        "model":"psnprsm:combat/slayer/zombie/falchion/halberd_inv"
+    },
+    "model_unused":{
         "type": "select",
         "property": "display_context",
         "cases": [

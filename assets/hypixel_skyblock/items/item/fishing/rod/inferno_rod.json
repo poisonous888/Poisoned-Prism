@@ -1,8 +1,8 @@
 {
-    "model": {
-        "type": "minecraft:condition",
-        "property": "minecraft:fishing_rod/cast",
-        "on_true":{"type":"model","model":"minecraft:item/fishing_rod_cast"},
-        "on_false":{"type":"model","model":"minecraft:item/fishing_rod"}
+    "model":{
+        "type":"minecraft:condition",
+        "property":"minecraft:fishing_rod/cast",
+        "on_true":{"type":"model","model":"psnprsm:fishing/rods/hellfire_cast"},
+        "on_false":{"type":"model","model":"psnprsm:fishing/rods/hellfire"}
     }
 }

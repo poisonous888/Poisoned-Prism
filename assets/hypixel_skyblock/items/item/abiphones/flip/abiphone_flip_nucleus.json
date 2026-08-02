@@ -1,6 +1,1 @@
-{
-    "model": {
-        "type":"model",
-        "model":"psnprsm:misc/abiphone"
-    }
-}
+{"model":{"type":"model","model":"psnprsm:misc/abiphone"}}

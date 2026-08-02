@@ -2,7 +2,7 @@
 my personal texture pack, made out of far too many resource packs to list them all. \
 \
 features:\
-|- (future) seperate full, equipment, sfx, and cit versions
+|- seperate full, cit, equipment, and world versions \
 |- fully integrated blockhit, completelly vanilla! works just like 1.7 except with no slowdown because its visual \
 |- custom terminator textures based on ultimate enchant. enchanted book textures for the different enchantments. \
 |- 32x handheld items for weapons that deserve it \
