@@ -1,0 +1,7 @@
+{
+    "parent":"psnprsm:item/handheld_blocked",
+    "textures":{
+        "layer0":"psnprsm:item/sword/slim/orange",
+        "layer1":"psnprsm:item/sword/slim_top/brown"
+    }
+}

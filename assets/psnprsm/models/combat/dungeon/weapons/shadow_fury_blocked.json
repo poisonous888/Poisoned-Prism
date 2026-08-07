@@ -1,1 +1,1 @@
-{"parent":"psnprsm:item/handheld_blocked","textures":{"layer0":"psnprsm:item/combat/dungeon/weapons/shadow_fury"}}
+{"parent":"psnprsm:item/sword_32x_blocked","textures":{"layer0":"psnprsm:item/combat/dungeon/weapons/shadow_fury_in_hand"}}
