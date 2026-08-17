@@ -1,1 +1,1 @@
-{"parent":"item/handheld","textures":{"layer0":"psnprsm:item/combat/slayer/spider/weapons/leaping_sword"}}
+{"parent":"psnprsm:item/sword_32x","textures":{"layer0":"psnprsm:item/combat/slayer/spider/weapons/sting_in_hand"}}

@@ -3,8 +3,9 @@ valkyrie - hypixel (edited)
 scylla - hypixel
 hyperion - hypixel
 dark_claymore - hypixel (edited)
-shadow_fury - TODO not final
-giants_sword - hypixel
+shadow_fury - hypixel (edited)
+giants_sword - furfsky (edited)
+livid dagger - packsHQ
 
 bonzo - furfsky (edited)
 ice_spray - furfsky (edited)
