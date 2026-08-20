@@ -8,5 +8,5 @@ gui/container/inventory - custom
 gui/container/<else> looshy dark mode
 gui/title/ - textcraft
 
-misc/spyglass_scope - TODO find
+misc/spyglass_scope - vanillatweaks
 misc/<else> - custom
