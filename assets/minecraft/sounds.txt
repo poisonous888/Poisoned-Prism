@@ -1,0 +1,8 @@
+items/ - custom or vanilla
+lang/ - custom
+shaders/ - vanilla tweaks
+sounds - TODO sounds
+
+models/item/fishing_rod - prism (modified)
+models/item/fishing_rod_cast - prism (modified)
+models/item/<else> - custom

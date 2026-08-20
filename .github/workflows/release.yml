@@ -45,7 +45,7 @@ jobs:
         run: |
           rm "pack.png"
           mv "sfx.png" "pack.png"
-          zip -r ${{ env.NAME }}-SFX-${{ env.VERSION }}.zip . -i pack.png pack.mcmeta assets/minecraft/sounds.json assets/minecraft/sounds/*
+          zip -r ${{ env.NAME }}-SFX-${{ env.VERSION }}.zip . -i pack.png pack.mcmeta assets/minecraft/sounds.json "assets/minecraft/sounds/*"
 
       - name: capture SFX zip
         uses: actions/upload-artifact@v7.0.1
