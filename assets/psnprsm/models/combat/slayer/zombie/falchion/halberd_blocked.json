@@ -1,4 +1,1 @@
-{
-    "parent":"psnprsm:item/sword_32x_blocked",
-    "textures":{"layer0":"psnprsm:item/combat/slayer/zombie/falchion/halberd_in_hand"}
-}
+{"parent":"psnprsm:item/sword_32x_blocked","textures":{"layer0":"psnprsm:item/combat/slayer/zombie/falchion/halberd_in_hand"}}
