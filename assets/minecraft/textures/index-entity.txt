@@ -1,1 +1,21 @@
-TODO
+humanoin/chain - prism
+humanoin/gold - prism
+humanoin/iron - prism
+humanoin/diamond - prism
+humanoin/copper - prism TODO edit
+humanoin/netherite - vanilla TODO edit
+humanoin/leather - TODO find (timedeo)
+
+player/ - custom
+projectiles/ - custom
+chest/christmas - vanilla TODO edit
+chest/ender - custom
+chest/normal - quark
+chest/trapped - quark
+
+blaze/ - custom
+creeper/ - custom
+experience/ - prism
+fishing/ - TODO find (timedeo)
+iron_golem/ - critical 16x
+snow_golem/ - custom
