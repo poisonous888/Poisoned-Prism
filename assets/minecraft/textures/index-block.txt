@@ -1,6 +1,8 @@
 stone, cobblestone, smooth stone, all stone bricks - snowfault
 all granite diorite andesite - snowfault
 all wool - snowfault
+water - snowfault
+lava - custom TODO maybe redo
 gold block - chisel
 diamond block - chisel TODO redo
 emerald block chisel TODO redo
