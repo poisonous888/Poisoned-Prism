@@ -34,7 +34,24 @@ fun start(){
 fun update(cur:File){
     val zip=ZipFile(cur)
     for(entry in zip.entries()){
-        entry
+        if(entry.isDirectory)continue
+        IO.println(entry.name)
+        if(entry.name.contains(".json")){
+            val file = File(dir,entry.name)
+            IO.println(file.exists())
+            if(file.exists())continue
+            val inStream = zip.getInputStream(entry)
+            val outStream = file.outputStream()
+            inStream.copyTo(outStream)
+        }
+        
+        
+        
+        
+        
+        val inStream = zip.getInputStream(entry)
+        
+        
     }
     
 }
