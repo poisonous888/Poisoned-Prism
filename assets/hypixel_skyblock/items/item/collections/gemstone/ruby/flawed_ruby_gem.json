@@ -1,12 +1,1 @@
-{
-    "model": {
-        "type": "model",
-        "model": "psnprsm:mining/gemstone/round/flawed",
-        "tints": [
-            {
-                "type": "minecraft:constant",
-                "value": [ 1, 0.1, 0.1 ]
-            }
-        ]
-    }
-}
+{"model":{"type":"model","model":"psnprsm:mining/gemstone/ruby/2"}}
