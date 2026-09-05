@@ -1,0 +1,15 @@
+{
+    "parent": "item/bow",
+    "display": {
+        "firstperson_righthand": {
+            "rotation": [ 310, 180, -50 ],
+            "translation": [ 1.13, 2, 1.13],
+            "scale": [ 0.68, 0.68, 0.68 ]
+        },
+        "firstperson_lefthand": {
+            "rotation": [ 310, 180, 50 ],
+            "translation": [ 1.13, 2, 1.13],
+            "scale": [ 0.68, 0.68, 0.68 ]
+        }
+    }
+}

@@ -1,28 +1,142 @@
 {
     "model":{
         "type":"condition","property":"component","predicate":"custom_data","value":"{'enchantments':{'ultimate_reiterate':5}}",
-        "on_true":{"type":"model","model":"psnprsm:combat/slayer/enderman/terminator/duplex"},
+        "on_true":{
+            "type1":"model","model":"psnprsm:combat/slayer/enderman/terminator/duplex",
+            "type":"select","property":"display_context",
+            "cases":[
+                {
+                    "model":{
+                        "type":"model","model":"psnprsm:combat/slayer/enderman/terminator/duplex"
+                    },
+                    "when":["gui","ground","fixed","on_shelf","thirdperson_righthand","thirdperson_lefthand"]
+                }
+            ],
+            "fallback": {
+                "type":"condition",
+                "property":"keybind_down",
+                "keybind":"key.attack",
+                "on_true": {"type":"model","model":"psnprsm:combat/slayer/enderman/terminator/duplex_pull"},
+                "on_false": {
+                    "type":"range_dispatch",
+                    "property":"cooldown",
+                    "entries":[
+                        {
+                            "model":{
+                                "type":"model","model":"psnprsm:combat/slayer/enderman/terminator/duplex_draw"
+                            },
+                            "threshold":0.33
+                        },
+                        {
+                            "model":{
+                                "type":"model","model":"psnprsm:combat/slayer/enderman/terminator/duplex"
+                            },
+                            "threshold":0.66
+                        }
+                    ],
+                    "fallback":{
+                        "type":"model","model":"psnprsm:combat/slayer/enderman/terminator/duplex_arrow"
+                    }
+                }
+            }
+        },
         "on_false":{
         "type":"condition","property":"component","predicate":"custom_data","value":"{'enchantments':{'ultimate_rend':5}}",
-        "on_true":{"type":"model","model":"psnprsm:combat/slayer/enderman/terminator/rend"},
+        "on_true":{
+            "type1":"model","model":"psnprsm:combat/slayer/enderman/terminator/rend",
+            "type":"select","property":"display_context",
+            "cases":[
+                {
+                    "model":{
+                        "type":"model","model":"psnprsm:combat/slayer/enderman/terminator/rend"
+                    },
+                    "when":["gui","ground","fixed","on_shelf","thirdperson_righthand","thirdperson_lefthand"]
+                }
+            ],
+            "fallback": {
+                "type":"condition",
+                "property":"keybind_down",
+                "keybind":"key.attack",
+                "on_true": {"type":"model","model":"psnprsm:combat/slayer/enderman/terminator/rend_pull"},
+                "on_false": {
+                    "type":"range_dispatch",
+                    "property":"cooldown",
+                    "entries":[
+                        {
+                            "model":{
+                                "type":"model","model":"psnprsm:combat/slayer/enderman/terminator/rend_draw"
+                            },
+                            "threshold":0.33
+                        },
+                        {
+                            "model":{
+                                "type":"model","model":"psnprsm:combat/slayer/enderman/terminator/rend"
+                            },
+                            "threshold":0.66
+                        }
+                    ],
+                    "fallback":{
+                        "type":"model","model":"psnprsm:combat/slayer/enderman/terminator/rend_arrow"
+                    }
+                }
+            }
+        },
         "on_false":{
         "type":"condition","property":"component","predicate":"custom_data","value":"{'enchantments':{'ultimate_soul_eater':5}}",
-        "on_true":{"type":"model","model":"psnprsm:combat/slayer/enderman/terminator/soul_eater"},
+        "on_true":{
+            "type1":"model","model":"psnprsm:combat/slayer/enderman/terminator/se",
+            "type":"select","property":"display_context",
+            "cases":[
+                {
+                    "model":{
+                        "type":"model","model":"psnprsm:combat/slayer/enderman/terminator/se"
+                    },
+                    "when":["gui","ground","fixed","on_shelf","thirdperson_righthand","thirdperson_lefthand"]
+                }
+            ],
+            "fallback": {
+                "type":"condition",
+                "property":"keybind_down",
+                "keybind":"key.attack",
+                "on_true": {"type":"model","model":"psnprsm:combat/slayer/enderman/terminator/se_pull"},
+                "on_false": {
+                    "type":"range_dispatch",
+                    "property":"cooldown",
+                    "entries":[
+                        {
+                            "model":{
+                                "type":"model","model":"psnprsm:combat/slayer/enderman/terminator/se_draw"
+                            },
+                            "threshold":0.33
+                        },
+                        {
+                            "model":{
+                                "type":"model","model":"psnprsm:combat/slayer/enderman/terminator/se"
+                            },
+                            "threshold":0.66
+                        }
+                    ],
+                    "fallback":{
+                        "type":"model","model":"psnprsm:combat/slayer/enderman/terminator/se_arrow"
+                    }
+                }
+            }
+        },
         "on_false":{
         "type":"condition","property":"component","predicate":"custom_data","value":"{'enchantments':{'ultimate_fatal_tempo':5}}",
-        "on_true":{"type":"model","model":"psnprsm:combat/slayer/enderman/terminator/fatal_tempo"},
+        "on_true":{"type":"model","model":"psnprsm:combat/slayer/enderman/terminator/ft"},
         "on_false":{
         "type":"condition","property":"component","predicate":"custom_data","value":"{'enchantments':{'ultimate_fatal_tempo':4}}",
-        "on_true":{"type":"model","model":"psnprsm:combat/slayer/enderman/terminator/fatal_tempo"},
+        "on_true":{"type":"model","model":"psnprsm:combat/slayer/enderman/terminator/ft"},
         "on_false":{
-       "type":"condition","property":"component","predicate":"custom_data","value":"{'enchantments':{'ultimate_fatal_tempo':3}}",
-        "on_true":{"type":"model","model":"psnprsm:combat/slayer/enderman/terminator/fatal_tempo"},
+        "type":"condition","property":"component","predicate":"custom_data","value":"{'enchantments':{'ultimate_fatal_tempo':3}}",
+        "on_true":{"type":"model","model":"psnprsm:combat/slayer/enderman/terminator/ft"},
         "on_false":{
         "type":"condition","property":"component","predicate":"custom_data","value":"{'enchantments':{'ultimate_fatal_tempo':2}}",
-        "on_true":{"type":"model","model":"psnprsm:combat/slayer/enderman/terminator/fatal_tempo"},
+        "on_true":{"type":"model","model":"psnprsm:combat/slayer/enderman/terminator/ft"},
         "on_false":{
         "type":"condition","property":"component","predicate":"custom_data","value":"{'enchantments':{'ultimate_fatal_tempo':1}}",
-        "on_true":{"type":"model","model":"psnprsm:combat/slayer/enderman/terminator/fatal_tempo"},
+        "on_true":{"type":"model","model":"psnprsm:combat/slayer/enderman/terminator/ft"},
         "on_false":{"type":"model","model":"item/bow"}
         }
         }
