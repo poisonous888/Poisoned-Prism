@@ -25,6 +25,10 @@ fun start(){
         IO.println("Cannot determine latest pack, delete minecraft downloads folder and let hypixel redownload pack")
         exitProcess(1)
     }
+    if(checkList.isEmpty()){
+        IO.println("Cannot find latest pack, let hypixel redownload pack")
+        exitProcess(1)
+    }
     
     //--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//
     
