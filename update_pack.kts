@@ -1,5 +1,7 @@
 import java.io.File
+import java.nio.file.Files
 import java.util.zip.ZipFile
+import kotlin.io.path.Path
 import kotlin.system.exitProcess
 
 val dir=File(System.getProperty("user.dir"))
@@ -57,14 +59,12 @@ fun start(){
             hash.remove(entry.name)
             val file = File(dir,entry.name)
             if(file.exists())continue
+            Files.createDirectories(Path(file.parent))
             IO.println(entry.name)
             val inStream = zip.getInputStream(entry)
             val outStream = file.outputStream()
             inStream.copyTo(outStream)
         }
-//        if(entry.name.contains(".png")){
-//            //IO.println(entry.name)
-//        }
     }
     IO.println("REMOVE:")
     for(item in hash){
