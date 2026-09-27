@@ -130,7 +130,7 @@
             "cases":[
                 {
                     "model":{
-                        "type":"model","model":"psnprsm:combat/slayer/enderman/terminator/se"
+                        "type":"model","model":"psnprsm:combat/slayer/enderman/terminator/ft"
                     },
                     "when":["gui","ground","fixed","on_shelf","thirdperson_righthand","thirdperson_lefthand"]
                 }
