@@ -1,1 +1,1 @@
-{"parent":"item/handheld","textures":{"layer0":"psnprsm:item/fishing/weapons/glacial_scythe"}}
+{"parent":"psnprsm:item/scythe","textures":{"layer0":"psnprsm:item/fishing/weapons/glacial_scythe"}}
