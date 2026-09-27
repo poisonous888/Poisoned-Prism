@@ -3,6 +3,7 @@ all granite diorite andesite - snowfault
 all wool - snowfault
 water - snowfault
 lava - custom TODO maybe redo
+tnt - prism
 gold block - chisel
 diamond block - chisel TODO redo
 emerald block chisel TODO redo
