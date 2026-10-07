@@ -1,0 +1,9 @@
+{
+    "model":{
+        "type":"model",
+        "model":"item/heart_of_the_sea",
+        "tints": [
+            {"type": "potion","default": 20224}
+        ]
+    }
+}

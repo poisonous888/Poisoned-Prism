@@ -1,1 +1,9 @@
-{"model":{"type":"model","model":"item/potion"}}
+{
+    "model":{
+        "type":"model",
+        "model":"item/potion",
+        "tints": [
+            {"type": "potion","default": 8991416}
+        ]
+    }
+}
