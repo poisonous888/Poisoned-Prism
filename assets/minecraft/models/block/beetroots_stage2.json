@@ -1,6 +1,1 @@
-{
-    "parent":"block/crop",
-    "textures":{
-        "crop":"block/beetroots_stage2"
-    }
-}
+{"parent":"psnprsm:item/crop","textures":{"crop":"block/beetroots_stage2"}}

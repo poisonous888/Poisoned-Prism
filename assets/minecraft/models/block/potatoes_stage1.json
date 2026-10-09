@@ -1,6 +1,1 @@
-{
-    "parent":"block/crop",
-    "textures":{
-        "crop":"block/potatoes_stage1"
-    }
-}
+{"parent":"psnprsm:item/crop","textures":{"crop":"block/potatoes_stage1"}}
