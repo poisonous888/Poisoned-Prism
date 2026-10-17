@@ -1,1 +1,9 @@
-{"model":{"type":"minecraft:model","model":"hypixel_skyblock:item/reforge_stones/suspicious_vial"}}
+{
+    "model":{
+        "type":"model",
+        "model":"item/potion",
+        "tints": [
+            {"type": "potion","default": 8439583}
+        ]
+    }
+}

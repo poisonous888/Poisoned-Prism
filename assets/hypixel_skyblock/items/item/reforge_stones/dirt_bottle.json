@@ -1,1 +1,9 @@
-{"model":{"type":"minecraft:model","model":"hypixel_skyblock:item/reforge_stones/dirt_bottle"}}
+{
+    "model":{
+        "type":"model",
+        "model":"item/tipped_arrow",
+        "tints": [
+            {"type": "potion","default": 8606770}
+        ]
+    }
+}
